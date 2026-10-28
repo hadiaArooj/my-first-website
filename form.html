@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS for specific layout and alignment -->
+    <style>
+        .form-heading {
+            color: #1e3a8a;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.5rem;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: #334155;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="number"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        .radio-checkbox-group {
+            margin-bottom: 1.25rem;
+        }
+        .radio-checkbox-group label {
+            font-weight: normal;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .radio-checkbox-group input {
+            margin-right: 0.3rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-logo">EduPortal</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html" class="active">Register</a></li>
+            <li><a href="thanks.html">Status</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main styled container matching requirements -->
+    <main class="container">
+        <div class="form-container">
+            <h2 class="form-heading">Registration Form</h2>
+            
+            <form action="thanks.html" method="get">
+                
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Registration Number -->
+                <div class="form-group">
+                    <label for="regno">Registration No:</label>
+                    <input type="text" id="regno" name="regno" required>
+                </div>
+                
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>    
+                
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="03XXXXXXXXX">
+                </div>
+
+                <!-- Age -->
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="16" max="100" required>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <!-- Gender Radio Buttons -->
+                <div class="radio-checkbox-group">
+                    <label style="font-weight: 600; display:block; margin-bottom: 0.4rem;">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <!-- Department Dropdown Select -->
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="ai">AI</option>
+                        <option value="cs">CS</option>
+                        <option value="se">SE</option>
+                        <option value="ee">EE</option>
+                    </select>
+                </div>
+
+                <!-- Interests Checkboxes -->
+                <div class="radio-checkbox-group">
+                    <label style="font-weight: 600; display:block; margin-bottom: 0.4rem;">Interests:</label>
+                    <input type="checkbox" id="web" name="interests" value="Web">
+                    <label for="web">Web</label>
+                    
+                    <input type="checkbox" id="ai_interests" name="interests" value="AI">
+                    <label for="ai_interests">AI</label>
+                    
+                    <input type="checkbox" id="games" name="interests" value="Games">
+                    <label for="games">Games</label>
+                </div>
+
+                <!-- Address Field -->
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <!-- Buttons Styled with Inline CSS Layout -->
+                <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                    <button type="submit" class="btn" style="flex: 2; padding: 0.75rem;">Send</button>
+                    <button type="reset" class="btn" style="flex: 1; background-color: #64748b; padding: 0.75rem;">Clear</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EduPortal. All academic rights reserved.</p>
+    </footer>
+
+</body>
+</html>

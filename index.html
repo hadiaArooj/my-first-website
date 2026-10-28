@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Home</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Internal CSS Method -->
+    <style>
+        .welcome-section h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .student-title {
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-logo">EduPortal</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="form.html">Register</a></li>
+            <li><a href="thanks.html">Status</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Background Image (Inline CSS used to adjust tracking spacing) -->
+    <header id="hero-banner" style="letter-spacing: 0.5px;">
+        <h1>Welcome to Your Academic Portal</h1>
+        <p>Manage your classes, view profile settings, and register for courses easily.</p>
+    </header>
+
+    <main class="container">
+        <!-- Flexbox Profile Row Layout -->
+        <section class="profile-section">
+            <!-- Circular Profile Picture -->
+            <img src="https://unsplash.com" alt="Student Profile Avatar" class="profile-img">
+            <div>
+                <h2>Welcome Back, Student!</h2>
+                <p class="student-title">Department of Computing</p>
+                <p style="margin-top: 0.5rem;">Access your academic dashboard parameters below. Use the enrollment form to update your active tracking preferences or switch primary course routes.</p>
+            </div>
+        </section>
+
+        <!-- CSS Grid Card Tracks Layout -->
+        <section class="welcome-section">
+            <h2>Your Academic Tracks</h2>
+            <div class="grid-container">
+                
+                <!-- Card with Absolute Positioned Status Badge -->
+                <article class="card">
+                    <div class="status-badge">Active</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p style="margin: 1rem 0; color: #64748b;">Explore foundational machine learning systems, statistical modeling, and deep networks.</p>
+                    <a href="form.html" class="btn">Update Info</a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="status-badge" style="background-color: #10b981; color: white;">Core</div>
+                    <h3>Computer Science</h3>
+                    <p style="margin: 1rem 0; color: #64748b;">Master structural algorithms, compiler optimization techniques, and architecture configurations.</p>
+                    <a href="form.html" class="btn">Update Info</a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="status-badge" style="background-color: #64748b; color: white;">Elective</div>
+                    <h3>Software Engineering</h3>
+                    <p style="margin: 1rem 0; color: #64748b;">Study agile engineering workflows, test-driven validation, and clean lifecycle architectures.</p>
+                    <a href="form.html" class="btn">Update Info</a>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EduPortal. All academic rights reserved.</p>
+    </footer>
+
+</body>
+</html>
